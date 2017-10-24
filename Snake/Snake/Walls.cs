@@ -28,9 +28,9 @@ namespace Snake
 
 		internal bool IsHit(Figure figure)
 		{
-			foreach(var wall in wallList)
+			foreach (var wall in wallList)
 			{
-				if(wall.IsHit(figure))
+				if (wall.IsHit(figure))
 				{
 					return true;
 				}
@@ -40,7 +40,7 @@ namespace Snake
 
 		public void Draw()
 		{
-			foreach (var wall in wallList)
+			foreach(var wall in wallList)
 			{
 				wall.Draw();
 			}
